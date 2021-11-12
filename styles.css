@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    overflow: hidden;
+}
+
+
+.left_border {
+    height: 80px;
+    width: 30px;
+    background-color: orange;
+    transform: translate(-430px);
+    position: absolute;
+}
+
+.right_border {
+    height: 80px;
+    width: 30px;
+    background-color: orange;
+    transform: translate(430px);
+    position: absolute;
+}
+
+img {
+    padding: 3px;
+    animation: image_anim 2s;
+    animation-delay: 3s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+@keyframes image_anim {
+    from {transform: scale(1.2); visibility: visible;}
+    to {visibility: visible;}
+}
+.second {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.third {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: -7%;
+}
+
+.forth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -70px;
+    margin-bottom: 50px;
+}
+
+
+p {
+    color:hsl(135, 91%, 46%);
+    padding: 10px;
+}
+
+.main {
+    display: inline-block;
+    margin-left: 15%;
+    width: 65%;
+    background-color: rgb(241, 239, 239);
+    box-shadow: 0 10px 5px gray;
+    animation-name: image_rotate;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+    position: relative;
+}
+
+@keyframes image_rotate {
+    from { transform: rotateZ(50deg); visibility: visible; filter: blur(15px);}
+    to {transform: rotateZ(-5deg); visibility: visible;} 
+}
+
+.info {
+    color: lightgray;
+    font-size: 12px;
+}
+
+h1 {
+    color: rgb(245, 30, 163);
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 0 2px 1px red;
+    -webkit-text-stroke: 1px black;
+    overflow: hidden; 
+    white-space: nowrap;
+    letter-spacing: 0.2px; 
+    animation:     typing 3s steps(50, end),
+    blink-caret 5s step-end infinite;
+    animation-delay: 4s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes typing {
+    from { width: 0; color: lawngreen; visibility: visible; }
+    to { width: 100% ; color: lightcoral; visibility: visible;}
+}
+
+figcaption {
+    float:right;
+    margin-left: 1%;
+}
+
+.second_figcap {
+    transform: translate(10px,-150px);
+    text-align: justify;
+}
+
+.third_figcap {
+    transform: translate(10px,-150px);
+    text-align: justify;
+}
+
+button {
+    background-color: thistle;
+    height: 40px;
+    width: 150px;
+    border-radius: 6px;
+    border: 1px solid thistle;
+    color: rgb(146, 145, 146);
+    box-shadow: 0 8px 3px thistle;
+}
+
+img:hover {
+    opacity: 0.2;
+}
